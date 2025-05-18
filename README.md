@@ -1,0 +1,2 @@
+# AndKotlin-NavigationComponent-AminSample
+前回作った AndKotlin-NavigationComponentSample に画面遷移アニメーションを追加した版
