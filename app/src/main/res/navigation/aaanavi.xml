@@ -16,6 +16,48 @@
         <action
             android:id="@+id/action_mainFragment_to_subFragment2"
             app:destination="@id/subFragment2" />
+        <action
+            android:id="@+id/action_to_fade1"
+            app:destination="@id/subFragment1"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_to_slide2"
+            app:destination="@id/subFragment2"
+            app:enterAnim="@anim/nav_slide_enter_anim"
+            app:exitAnim="@anim/nav_slide_exit_anim"
+            app:popEnterAnim="@anim/nav_slide_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_pop_exit_anim" />
+        <action
+            android:id="@+id/action_to_zoom1"
+            app:destination="@id/subFragment1"
+            app:enterAnim="@anim/nav_zoom_enter_anim"
+            app:exitAnim="@anim/nav_zoom_exit_anim"
+            app:popEnterAnim="@anim/nav_zoom_pop_enter_anim"
+            app:popExitAnim="@anim/nav_zoom_pop_exit_anim" />
+        <action
+            android:id="@+id/action_to_up2"
+            app:destination="@id/subFragment2"
+            app:enterAnim="@anim/nav_up_enter_anim"
+            app:exitAnim="@anim/nav_up_exit_anim"
+            app:popEnterAnim="@anim/nav_up_pop_enter_anim"
+            app:popExitAnim="@anim/nav_up_pop_exit_anim" />
+        <action
+            android:id="@+id/action_to_dynamic1"
+            app:destination="@id/subFragment1"
+            app:enterAnim="@anim/nav_dynamic_enter_anim"
+            app:exitAnim="@anim/nav_dynamic_exit_anim"
+            app:popEnterAnim="@anim/nav_dynamic_pop_enter_anim"
+            app:popExitAnim="@anim/nav_dynamic_pop_exit_anim" />
+        <action
+            android:id="@+id/action_to_dynamic2"
+            app:destination="@id/subFragment2"
+            app:enterAnim="@anim/nav_dynamic_enter_anim"
+            app:exitAnim="@anim/nav_dynamic_exit_anim"
+            app:popEnterAnim="@anim/nav_dynamic_pop_enter_anim"
+            app:popExitAnim="@anim/nav_dynamic_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/subFragment1"

@@ -33,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/callSubfragment1"
+        android:layout_marginEnd="3dp"
         app:layout_constraintTop_toBottomOf="@id/imv_nyandar001"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/btn_callsub2"
@@ -43,8 +44,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/callSubfragment2"
+        android:layout_marginStart="3dp"
         app:layout_constraintTop_toBottomOf="@id/imv_nyandar001"
         app:layout_constraintLeft_toRightOf="@id/btn_callsub1"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_callsub1fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callSubfragment1fade"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_callsub1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_callsub2slide"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/btn_callsub2slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callSubfragment2slide"
+        android:layout_marginStart="3dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_callsub2"
+        app:layout_constraintLeft_toRightOf="@id/btn_callsub1fade"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_callsub1zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callSubfragment1zoom"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_callsub1fade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_callsub2up"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/btn_callsub2up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callSubfragment2up"
+        android:layout_marginStart="3dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_callsub2slide"
+        app:layout_constraintLeft_toRightOf="@id/btn_callsub1zoom"
         app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

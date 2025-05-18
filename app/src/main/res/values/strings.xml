@@ -7,5 +7,9 @@
     <string name="subfragment2">SubFragment2</string>
     <string name="subfragment2image">SubFragment2の画像</string>
     <string name="callSubfragment1">SubFragment1へ</string>
+    <string name="callSubfragment1fade">SubFragment1へ(fade)</string>
+    <string name="callSubfragment1zoom">SubFragment1へ(zoom)</string>
     <string name="callSubfragment2">SubFragment2へ</string>
+    <string name="callSubfragment2slide">SubFragment2へ(slide)</string>
+    <string name="callSubfragment2up">SubFragment2へ(up)</string>
 </resources>

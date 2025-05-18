@@ -44,13 +44,29 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.btn_callsub1).setOnClickListener {
-            val params = bundleOf("aaa" to "aaa", "bbb" to "bbb")
+            val params = bundleOf("aaa" to "aaa111", "bbb" to "bbb111")
             findNavController().navigate(R.id.action_mainFragment_to_subFragment1, params)
+        }
+        view.findViewById<Button>(R.id.btn_callsub1fade).setOnClickListener {
+            val params = bundleOf("aaa" to "aaa222", "bbb" to "bbb222")
+            findNavController().navigate(R.id.action_to_fade1, params)
+        }
+        view.findViewById<Button>(R.id.btn_callsub1zoom).setOnClickListener {
+            val params = bundleOf("aaa" to "aaa333", "bbb" to "bbb333")
+            findNavController().navigate(R.id.action_to_zoom1, params)
         }
 
         view.findViewById<Button>(R.id.btn_callsub2).setOnClickListener {
-            val params = bundleOf("aaa" to "aaa", "bbb" to "bbb")
+            val params = bundleOf("aaa" to "aaa", "bbb444" to "bbb444")
             findNavController().navigate(R.id.action_mainFragment_to_subFragment2, params)
+        }
+        view.findViewById<Button>(R.id.btn_callsub2slide).setOnClickListener {
+            val params = bundleOf("aaa" to "aaa", "bbb555" to "bbb55")
+            findNavController().navigate(R.id.action_to_slide2, params)
+        }
+        view.findViewById<Button>(R.id.btn_callsub2up).setOnClickListener {
+            val params = bundleOf("aaa" to "aaa", "bbb555" to "bbb55")
+            findNavController().navigate(R.id.action_to_up2, params)
         }
     }
 
