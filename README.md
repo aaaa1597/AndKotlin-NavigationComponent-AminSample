@@ -1,6 +1,6 @@
 # AndKotlin-NavigationComponent-AminSample
-前回作った [AndKotlin-NavigationComponentSample](https://github.com/aaaa1597/AndKotlin-NavigationComponentSample.git) に画面遷移アニメーションを追加した版
-
+前回作った [AndKotlin-NavigationComponentSample](https://github.com/aaaa1597/AndKotlin-NavigationComponentSample.git) に画面遷移アニメーションを追加した版  
+参考:[https://at-sushi.work/blog/21/](https://at-sushi.work/blog/21/)
 
 ## Navigation Component
 今の今まで Navigation Component を触らずにやってきたけど、いい加減士っとく必要があるかと思って調べてみた。  
