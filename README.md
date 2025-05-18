@@ -15,8 +15,7 @@ Navigation Component のおかげかそんなに変更しなくてもイケた�
 今回は[https://at-sushi.work/blog/21/](https://at-sushi.work/blog/21/)さんのを使わせてもらった。  
 基本的なアニメーションは網羅してくれてるのでほとんどのプロジェクトで流用できる気がする。
 
-res\animにxmlファイルを準備する。
-4つで1セット。
+res\animにxmlファイルを準備する。4ファイルで1セット。
 
 - enterAnim ... 開始のアニメーション
 
