@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.core.os.bundleOf
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -46,7 +45,7 @@ class MainFragment : Fragment() {
 
         view.findViewById<Button>(R.id.btn_callsub1).setOnClickListener {
             val params = bundleOf("aaa" to "aaa", "bbb" to "bbb")
-            findNavController().navigate(R.id.action_mainFragment_to_subFragment12, params)
+            findNavController().navigate(R.id.action_mainFragment_to_subFragment1, params)
         }
 
         view.findViewById<Button>(R.id.btn_callsub2).setOnClickListener {

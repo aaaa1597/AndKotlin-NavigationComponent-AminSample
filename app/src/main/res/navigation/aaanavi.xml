@@ -11,7 +11,7 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_subFragment12"
+            android:id="@+id/action_mainFragment_to_subFragment1"
             app:destination="@id/subFragment1" />
         <action
             android:id="@+id/action_mainFragment_to_subFragment2"
