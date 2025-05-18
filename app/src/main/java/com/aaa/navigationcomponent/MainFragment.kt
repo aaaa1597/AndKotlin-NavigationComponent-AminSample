@@ -57,15 +57,15 @@ class MainFragment : Fragment() {
         }
 
         view.findViewById<Button>(R.id.btn_callsub2).setOnClickListener {
-            val params = bundleOf("aaa" to "aaa", "bbb444" to "bbb444")
+            val params = bundleOf("aaa" to "aaa444", "bbb" to "bbb444")
             findNavController().navigate(R.id.action_mainFragment_to_subFragment2, params)
         }
         view.findViewById<Button>(R.id.btn_callsub2slide).setOnClickListener {
-            val params = bundleOf("aaa" to "aaa", "bbb555" to "bbb55")
+            val params = bundleOf("aaa" to "aaa555", "bbb" to "bbb55")
             findNavController().navigate(R.id.action_to_slide2, params)
         }
         view.findViewById<Button>(R.id.btn_callsub2up).setOnClickListener {
-            val params = bundleOf("aaa" to "aaa", "bbb555" to "bbb55")
+            val params = bundleOf("aaa" to "aaa666", "bbb" to "bbb55")
             findNavController().navigate(R.id.action_to_up2, params)
         }
     }
