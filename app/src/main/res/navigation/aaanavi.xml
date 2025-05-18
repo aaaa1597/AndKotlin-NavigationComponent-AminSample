@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aaanavi"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.aaa.navigationcomponent.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_subFragment12"
+            app:destination="@id/subFragment1" />
+        <action
+            android:id="@+id/action_mainFragment_to_subFragment2"
+            app:destination="@id/subFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/subFragment1"
+        android:name="com.aaa.navigationcomponent.SubFragment1"
+        android:label="fragment_sub1"
+        tools:layout="@layout/fragment_sub1" />
+    <fragment
+        android:id="@+id/subFragment2"
+        android:name="com.aaa.navigationcomponent.SubFragment2"
+        android:label="fragment_sub2"
+        tools:layout="@layout/fragment_sub2" />
+</navigation>
