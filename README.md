@@ -28,7 +28,7 @@ res\animにxmlファイルを準備する。4ファイルで1セット。
 ## 2. actionを追加
 
 res\navigation配下のナビゲーション.xml(aaanavi.xml)にactionを追加していく。  
-UIを操作するより、xmlコードを直接追加した方が早い。  
+UIを操作するより、xmlコードを直接いじった方が早い。  
 
 - aaanavi.xml(19-60)
 ```diff xml:aaanavi.xml
