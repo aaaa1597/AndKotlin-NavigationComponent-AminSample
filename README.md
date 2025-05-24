@@ -117,3 +117,40 @@ UIを操作するより、xmlコードを直接いじった方が早い。
 これで、画面遷移のアニメーション実装ができた。  
 引数も期待通り受け渡しできてる。  
 アニメーションだけを拡張するだけなら結構分かりやすかった。
+
+
+# 番外編 画面遷移時に、遷移先Fragmentに引数を渡す。
+1. 送信側で: findNavController().navigate()を呼ぶときにBundle型の引数渡す
+  1-1. Bundle型の引数を生成
+  1-2. navigate()の第2引数にセット
+2. 受信側で: onCreate()の中で、argumentsメンバから取り出す。
+
+### 1. 送信側で: findNavController().navigate()を呼ぶときにBundle型の引数渡す
+- MainFragment.kt(47-48)
+```diff kotlin:MainFragment.kt
+  ～略～
+        view.findViewById<Button>(R.id.btn_callsub1).setOnClickListener {
+-           findNavController().navigate(R.id.action_mainFragment_to_subFragment1)
++           val params = bundleOf(ARG_PARAM1 to "aaa111", ARG_PARAM2 to "bbb111")
++           findNavController().navigate(R.id.action_mainFragment_to_subFragment1, params)
+        }
+  ～略～
+```
+
+### 2. 送信側で: findNavController().navigate()を呼ぶときにBundle型の引数渡す
+- SubFragment1.kt(25-26,30-34)
+```diff kotlin:SubFragment1.kt
+  ～略～
++  private var param1: String? = null
++  private var param2: String? = null
+
+   override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
++       arguments?.let {
++           param1 = it.getString(ARG_PARAM1)
++           param2 = it.getString(ARG_PARAM2)
++           Log.d("aaaaa", "aaaaa aaa=${param1} bbb=${param2}")
++       }
+    }
+  ～略～
+```
