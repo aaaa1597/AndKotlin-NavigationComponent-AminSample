@@ -29,7 +29,7 @@ class SubFragment2 : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-            Log.d("aaaaa", "aaaaa aaa=${it.getString("aaa")} bbb=${it.getString("bbb")}")
+            Log.d("aaaaa", "aaaaa aaa=${param1} bbb=${param2}")
         }
     }
 
